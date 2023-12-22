@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: block;
+  padding: 12px 40px;
+  border: none;
+  background-color: #1f096e;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  color: #fcfcfc;
+  cursor: pointer;
+}
+
+a {
+  color: #1f096e;
+}
+
+body {
+  background-color: #fcfcfc;
+  color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.194);
+}
+header .logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.form-div, .allPost {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 440px;
+  margin: auto;
+  gap: 20px;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.form-div form{
+  width: 100%;
+}
+
+.form-div form input{
+  margin: 10px 0px;
+}
+.allPost{
+  max-width: 600px;
+  width: 100%;
+}
+.form-div input {
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  color: #000000;
+}
+ input,textarea,select {
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  color: #000000;
+  margin: 5px 0px;
+}
+.form-div .helptext{
+  display:none;
+}
+.home-div {
+  border: 1px solid rgba(0, 0, 0, 0.194);
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+.home-div .top {
+  text-align: center;
+}
+.home-div .flex {
+  display: flex;
+  width: 100%;
+  gap: 100px;
+}
+.home-div .flex .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-div .flex .left button {
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid #1f096e;
+  cursor: pointer;
+}
+.home-div .flex .right {
+  padding: 30px;
+}
+.home-div .flex .right .pagesallDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.home-div .flex .right .pagesallDiv button {
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid #414046;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
+
+
+.allPost .post{
+  padding: 12px;  
+  border-bottom: 1px solid #000;
+}
+.allPost .post .detail{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.allPost .post .desc{
+  margin:40px 0px;
+}
+img{
+  width: 100%;
+}
+
+
+
+.profile_main{
+  max-width: 80%;
+  margin: auto;
+padding: 50px;
+}
+
+.profile_main .head{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.profile_main .content{
+  display: flex;
+}
+.profile_main .content .left{
+  width: 20%;
+  border-right: 1px solid #000;
+}
+.profile_main .content .sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile_main .content .sidebar a{
+display: block;
+
+}
+.profile_main .content .right{
+  width: 80%;
+  padding-left: 20px;
+}
+
+.profile_main .content .right input,select{
+margin: 10px 0px;
+}
+
+.pri-btn{
+  background-color: #087639;
+}
+
+.del-btn{
+  background-color: #821010;
+}
+
+.foot{
+  margin: 20px 0px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+
+.comments{
+  margin: 20px 0px;
+}
+
+.comment{
+  border-bottom: 1px solid #000;
+  padding: 20px 20px;
+}
+
+.comment .author{
+  margin: 5px 0px;
+  font-weight: 700;
+  
+}
+
+.comment .author{
+  font-weight: 700;
+
+}
+
+.new_comment{
+
+  margin: 30px 0px;
+}
+
+
+
+.comments .inner{
+  margin: 20px 0px;
+}
