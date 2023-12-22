@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOGGING</title>
+
+  <!-- link css -->
+  <link rel="stylesheet" href="{%  static 'main.css' %}">
+</head>
+
+<body>
+
+  {% include 'header.html' %}
+
+  <div class="form-div">
+    <h1>Login Now</h1>
+
+    <form method="post">
+      {% csrf_token %}
+
+      <!-- Custom class and attribute for the username field -->
+      <div class="form-group">
+        <label for="{{ form.username.id_for_label }}" class="custom-label">Username:</label>
+        {{ form.username }}
+      </div>
+
+
+      
+    <!-- Custom class and attribute for the username field -->
+    <div class="form-group">
+      <label for="{{ form.username.id_for_label }}" class="custom-label">Username:</label>
+      {{ form.username }}
+  </div>
+  
+  <!-- Custom class and attribute for the email field -->
+  <div class="form-group">
+      <label for="{{ form.email.id_for_label }}" class="custom-label">Email:</label>
+      {{ form.email }}
+  </div>
+
+  <!-- Custom class and attribute for the password1 field -->
+  <div class="form-group">
+      <label for="{{ form.password1.id_for_label }}" class="custom-label">Password:</label>
+      {{ form.password1 }}
+  </div>
+
+  <!-- Custom class and attribute for the password2 field -->
+  <div class="form-group">
+      <label for="{{ form.password2.id_for_label }}" class="custom-label">Confirm Password:</label>
+      {{ form.password2 }}
+  </div>
+
+      <!-- Custom class and attribute for the password1 field -->
+      <div class="form-group">
+        <label for="{{ form.password.id_for_label }}" class="custom-label">Password:</label>
+        {{ form.password }}
+      </div>
+
+      <button class="btn" type="submit">Submit</button>
+
+    </form>
+
+    <p>
+      Didn't have an account. Go to <a href="{% url 'register' %}">Sign Up</a> Page to create a new one. </p>
+
+
+  </div>
+</body>
+
+</html>
